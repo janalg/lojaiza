@@ -17,20 +17,19 @@ header {
     flex-wrap: wrap;
     justify-content: space-around;
     max-width: 100%;
-    background-color: #82715F;
-    height: 100px;
+    background-color: #82715F; 
     align-items: center;
     font-family: 'Nunito', sans-serif;
 }
 
 .logo {
     max-width: 200px;
-   
 }
 
 header p {
     margin-left: 12%;
 }
+
 .nav a {
     font-size: 26px;
     margin: 10px;
@@ -40,6 +39,7 @@ header p {
 .nav a:hover {
     color: #A58169;
     border-bottom: 2px solid black;
+    transition: 0.2s ease;
 }
 
 /*------------------HEADER------------------*/
@@ -58,7 +58,7 @@ main {
 }
 
 .foto1 {
-  margin: 10% 0 5% 5%;
+  margin: 5% 0 5% 5%;
   position: relative;
 }
 
@@ -158,19 +158,50 @@ main {
 
 .rodape p {
     color: #272B1D;
-    font-size: 19px;
+    font-size: 15px;
 }
 
 .rodape p a {
     color: #272B1D;
-    font-size: 19px;
+    font-size: 15px;
 }
 
 .rodape  a:hover {
-    color: #82715F;
+    color: #2c1e10cb;
 }
 
 /*------------------FOOTER------------------*/
+/*------------------CATÁLOGO------------------*/
+.body2 {
+    background-color: #82715F; 
+}
+
+.catalogo {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 4%;
+    margin: 0 auto;
+    margin-bottom: 6%;
+    padding: 4% 15% 4% 15%;
+    border-top: 1px solid black;
+}
+
+.catalogo p {
+    font-size: 19px;
+    font-family: 'Nunito', sans-serif;
+    text-align: center;
+}
+
+.catalogo div {
+    padding: 5%;
+}
+
+.catalogo div:hover {
+    background-color: #A58169;
+}
+
+
+/*------------------CATÁLOGO------------------*/
 /*------------------RESPONSIVE------------------*/
 @media (max-width: 900px) {
     header {
@@ -197,6 +228,9 @@ main {
     .rodape {
         display: flex;
         justify-content: space-around;
+    }
+    .catalogo {
+        display: block;
     }
 }
 /*------------------RESPONSIVE------------------*/
